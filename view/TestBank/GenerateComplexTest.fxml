@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.TestBank.GenerateComplexTestController">
+   <children>
+      <Button layoutX="76.0" layoutY="647.0" mnemonicParsing="false" onMouseClicked="#handleCreated" prefHeight="70.0" prefWidth="453.0" text="Generate" translateY="-135.0" />
+      <GridPane layoutX="1.0" layoutY="95.0" prefHeight="70.0" prefWidth="616.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="194.0" minHeight="0.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="568.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <FlowPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label text="Name of Test:" />
+                  <TextField fx:id="name" translateX="10.0" />
+               </children>
+            </FlowPane>
+            <FlowPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+               <children>
+                  <Label text="Number of Questions:" />
+                  <TextField fx:id="numquestion" translateX="10.0" />
+               </children>
+            </FlowPane>
+            <FlowPane prefHeight="474.0" prefWidth="308.0" GridPane.rowIndex="1">
+               <children>
+                  <Label text="Course:" />
+                  <Label fx:id="courseLabel" text="Label" translateX="10.0">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Button mnemonicParsing="false" onMouseClicked="#addrow" text="Add Question Pattern" translateX="25.0" />
+                  <Label prefWidth="95.0" text="Question Patterns" translateX="250.0" translateY="5.0" />
+               </children>
+            </FlowPane>
+            <FlowPane prefHeight="50.0" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Label text="Duration:" translateX="20.0" />
+                  <Label text="Hours:" translateX="25.0" />
+                  <TextField fx:id="hour" prefHeight="25.0" prefWidth="53.0" translateX="27.0" />
+                  <Label text="Minutes:" translateX="30.0" />
+                  <TextField fx:id="minute" prefHeight="25.0" prefWidth="54.0" translateX="35.0" />
+               </children>
+            </FlowPane>
+         </children>
+      </GridPane>
+      <ScrollPane layoutX="1.0" layoutY="192.0" prefHeight="306.0" prefWidth="603.0">
+         <content>
+            <GridPane fx:id="gpane" gridLinesVisible="true" prefHeight="153.0" prefWidth="610.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="49.0" minHeight="49.0" prefHeight="49.0" />
+              </rowConstraints>
+               <children>
+                  <Label text="Subject" GridPane.halignment="CENTER" />
+                  <Label text="Type" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                  <Label text="Difficulty" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                  <Label text="Duration" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+                  <Label text="\% of Test" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
+                  <Label text="(Minutes)" translateX="25.0" translateY="12.0" GridPane.columnIndex="3" />
+               </children>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Label layoutX="150.0" layoutY="14.0" prefHeight="70.0" prefWidth="431.0" text="Complex Test Generation">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

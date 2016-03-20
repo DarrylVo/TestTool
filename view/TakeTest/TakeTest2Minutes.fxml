@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.TakeTest.TakeTest2MinutesController">
+   <children>
+      <AnchorPane layoutX="5.0" prefHeight="370.0" prefWidth="457.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="-5.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ProgressBar fx:id="progressBar" layoutX="203.0" layoutY="28.0" prefWidth="200.0" progress="0.0" />
+            <Button disable="true" layoutX="46.0" layoutY="291.0" mnemonicParsing="false" text="Submit Test" />
+            <Arc fx:id="timerArc" fill="#c8d0d7" layoutX="320.0" layoutY="304.0" length="360.0" radiusX="39.0" radiusY="35.0" startAngle="90.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+            <TableView fx:id="questionTable" editable="true" prefHeight="252.0" prefWidth="164.0">
+              <columns>
+                <TableColumn fx:id="questions" prefWidth="163.0" text="Questions" />
+              </columns>
+            </TableView>
+            <Button disable="true" layoutX="384.0" layoutY="279.0" mnemonicParsing="false" pickOnBounds="false" text="Next Question" />
+            <Text fx:id="timeRemaining" layoutX="258.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="124.0">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <TitledPane animated="false" collapsible="false" layoutX="202.0" layoutY="53.0" text="Alert">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="176.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="8.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warning: You have 2 minutes remaining!" textAlignment="CENTER" wrappingWidth="184.87890625">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="ok" layoutX="84.0" layoutY="122.0" mnemonicParsing="false" onMouseClicked="#handleOK" text="OK" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

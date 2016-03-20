@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="279.0" prefWidth="328.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <TextArea layoutX="28.0" layoutY="36.0" prefWidth="272.0" wrapText="true" />
+    <Label layoutX="28.0" layoutY="20.0" text="Delete Question:" />
+    <Label layoutX="28.0" layoutY="210.0" prefHeight="37.0" prefWidth="272.0" text="Are you sure you would like to delete this question from the test bank?" wrapText="true" />
+    <Button fx:id="QBDeleteYes" layoutX="100.0" layoutY="247.0" mnemonicParsing="false" prefWidth="64.0" text="Yes" />
+    <Button fx:id="QBDeleteNo" layoutX="164.0" layoutY="247.0" mnemonicParsing="false" prefWidth="64.0" text="No" />
+  </children>
+</AnchorPane>

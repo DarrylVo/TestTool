@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="183.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Login.StudentLandingPageController">
+  <children>
+    <Button fx:id="takeTest" layoutX="44.0" layoutY="100.0" mnemonicParsing="false" text="Take Test" />
+    <Button fx:id="completedTests" layoutX="236.0" layoutY="100.0" mnemonicParsing="false" text="Completed Tests" />
+    <ChoiceBox fx:id="course" layoutX="44.0" layoutY="73.0" prefWidth="172.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <Label layoutX="14.0" layoutY="14.0" text="Student:" />
+    <Label layoutX="24.0" layoutY="49.0" text="Please choose your course below:" />
+    <Label layoutX="37.0" layoutY="121.0" prefHeight="62.0" prefWidth="178.0" text="Click here to take a test that has been assigned to you." wrapText="true" />
+    <Label layoutX="236.0" layoutY="121.0" prefHeight="62.0" prefWidth="178.0" text="Click here to view the tests you have taken." wrapText="true" />
+  </children>
+</AnchorPane>

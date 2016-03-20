@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.GradeTest.GradeViewStatsController">
+   <top>
+      <Label text="Grade Test" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <SplitPane dividerPositions="0.29797979797979796" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <TableView fx:id="statsTable" layoutX="-26.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="questionColumn" prefWidth="75.0" text="Questions" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Separator layoutY="26.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0" />
+                        <Label fx:id="testName" alignment="TOP_LEFT" layoutX="167.0" text="Label" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="35.0" layoutY="97.0" text="Student Answers" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="97.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="234.0" layoutY="97.0" text="Student Statistics" AnchorPane.leftAnchor="234.0" AnchorPane.topAnchor="97.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="questionNum" layoutX="35.0" layoutY="144.0" text="Label" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="145.0" />
+                        <Label layoutX="235.0" layoutY="144.0" text="Percent Correct:" AnchorPane.leftAnchor="234.0" AnchorPane.topAnchor="145.0" />
+                        <Label fx:id="percentCorrect" layoutX="346.0" layoutY="144.0" text="75%" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="145.0" />
+                        <Label layoutX="239.0" layoutY="178.0" text="Most Common Answer:" AnchorPane.leftAnchor="234.0" AnchorPane.topAnchor="180.0" />
+                        <TextArea fx:id="question" editable="false" layoutX="35.0" layoutY="174.0" prefHeight="109.0" prefWidth="169.0" wrapText="true" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="174.0" />
+                        <TextArea fx:id="commonAns" editable="false" layoutX="238.0" layoutY="202.0" prefHeight="78.0" prefWidth="135.0" text="Array" wrapText="true" AnchorPane.leftAnchor="238.0" AnchorPane.topAnchor="202.0" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <buttons>
+          <Button fx:id="gradingHome" mnemonicParsing="false" prefHeight="26.0" prefWidth="105.0" text="Grading Home" />
+        </buttons>
+      </ButtonBar>
+   </bottom>
+</BorderPane>

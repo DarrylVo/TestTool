@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="615.999755859375" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.QuestionBank.QuestionBankController">
+  <children>
+    <Label id="QuestionBank" fx:id="QBQuestionBankTitle" layoutX="258.0" layoutY="14.0" text="Question Bank" />
+    <TextArea id="Search" fx:id="QBSearchBox" layoutX="24.0" layoutY="45.0" prefHeight="21.0" prefWidth="339.0" text="Keyword" wrapText="true" />
+    <Button id="Search" fx:id="QBSearch" layoutX="363.0" layoutY="45.0" mnemonicParsing="false" text="Search" />
+    <Button id="AdvancedSearch" fx:id="QBAdvancedSearch" layoutX="449.0" layoutY="45.0" mnemonicParsing="false" prefWidth="140.0" text="Advanced Search" />
+    <Button id="Add" fx:id="QBAdd" layoutX="24.0" layoutY="320.0" mnemonicParsing="false" prefWidth="113.0" text="Add New" />
+    <Button id="Edit" fx:id="QBEdit" layoutX="137.0" layoutY="320.0" mnemonicParsing="false" prefWidth="113.0" text="Edit Selected" />
+    <Button id="Delete" fx:id="QBDelete" layoutX="250.0" layoutY="320.0" mnemonicParsing="false" prefWidth="113.0" text="Delete" />
+    <Label fx:id="QBTypeTitle" layoutX="363.0" layoutY="93.0" text="" />
+    <TableView fx:id="questionTable" layoutX="24.0" layoutY="73.0" prefHeight="238.0" prefWidth="558.0" />
+  </children>
+</AnchorPane>

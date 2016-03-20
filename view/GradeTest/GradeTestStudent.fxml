@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.GradeTest.GradeTestStudentHandler">
+   <top>
+      <Label fx:id="courseName" text="Grade Test" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <SplitPane prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="314.0" prefWidth="133.0">
+                     <children>
+                        <TableView fx:id="studentTable" layoutX="-34.0" layoutY="28.0" prefHeight="314.0" prefWidth="127.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="studentNameColumn" prefWidth="68.0" text="Student" />
+                              <TableColumn fx:id="gradeColumn" prefWidth="54.0" text="Grade" />
+                              <TableColumn fx:id="gradeCompleteColumn" prefWidth="68.0" text="Grade Complete" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <buttons>
+            <Button fx:id="viewStudent" mnemonicParsing="false" text="View Student" />
+          <Button fx:id="submitGrades" mnemonicParsing="false" prefHeight="26.0" prefWidth="337.0" text="Send Grades" />
+            <Button fx:id="gradingComplete" mnemonicParsing="false" text="Grade Complete" />
+            <Button fx:id="gradingHome" mnemonicParsing="false" text="Grading Home" />
+        </buttons>
+      </ButtonBar>
+   </bottom>
+</BorderPane>

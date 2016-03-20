@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="232.0" prefWidth="583.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Login.LoginController">
+   <children>
+      <PasswordField id="PasswordField" fx:id="password" layoutX="263.0" layoutY="116.0" promptText="Password" />
+      <TextField id="UserField" fx:id="username" layoutX="57.0" layoutY="116.0" promptText="Email Address" />
+      <TextFlow layoutX="110.0" layoutY="26.0" prefHeight="57.0" prefWidth="363.0" textAlignment="CENTER">
+         <children>
+            <Label prefHeight="58.0" prefWidth="363.0" text="Welcome to TestTool" textAlignment="CENTER">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+         </children>
+      </TextFlow>
+      <Button id="LoginButton" fx:id="LoginButton" layoutX="473.0" layoutY="116.0" mnemonicParsing="false" text="Login" />
+      <Button id="RegisterButton" layoutX="57.0" layoutY="163.0" mnemonicParsing="false" onAction="#register" text="Register User" />
+      <Label layoutX="249.0" layoutY="155.0" prefHeight="68.0" prefWidth="288.0" text="user: test@test.com   password:test" />
+   </children>
+</AnchorPane>

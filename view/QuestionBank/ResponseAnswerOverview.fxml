@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.QuestionBank.ResponseAnswerOverviewController">
+  <children>
+    <Label layoutX="253.0" layoutY="86.0" text="Type:" />
+    <Label layoutX="98.0" layoutY="135.0" text="Question:" />
+    <TextField fx:id="type" editable="false" layoutX="253.0" layoutY="103.0" promptText="Question Type" />
+    <TextArea fx:id="questionText" layoutX="98.0" layoutY="153.0" prefHeight="80.0" prefWidth="644.0" />
+    <Label layoutX="98.0" layoutY="506.0" text="Point Value:" />
+    <TextField fx:id="points" layoutX="174.0" layoutY="502.0" />
+    <Button fx:id="back" layoutX="543.0" layoutY="515.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" text="Back" />
+    <Button fx:id="next" layoutX="657.0" layoutY="515.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" text="Next" />
+    <Button fx:id="cancel" layoutX="543.0" layoutY="545.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="221.0" text="Cancel" />
+    <Label layoutX="324.0" layoutY="51.0" text="Add Answer(s)">
+      <font>
+        <Font size="24.0" />
+      </font>
+    </Label>
+    <TextArea fx:id="keyword" layoutX="98.0" layoutY="264.0" prefHeight="212.0" prefWidth="458.0" wrapText="true" />
+    <Label layoutX="97.0" layoutY="247.0" text="Keyword(s)" />
+    <RadioButton fx:id="partial" layoutX="576.0" layoutY="284.0" mnemonicParsing="false" text="Partially Graded" />
+    <RadioButton fx:id="full" layoutX="575.0" layoutY="300.0" mnemonicParsing="false" text="Fully Automated" />
+    <Label layoutX="575.0" layoutY="268.0" text="Automated Grading:" />
+    <Label layoutX="576.0" layoutY="327.0" text="Automated Grading:" />
+    <Label layoutX="597.0" layoutY="343.0" prefHeight="88.0" prefWidth="165.0" text="Partial grading will require instructor to verify the student's answer after automated grading is done" wrapText="true" />
+    <Label layoutX="597.0" layoutY="431.0" prefHeight="52.0" prefWidth="165.0" text="Full grading will allow optional instructor verification" wrapText="true" />
+  </children>
+</AnchorPane>

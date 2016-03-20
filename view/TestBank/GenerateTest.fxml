@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.TestBank.GenerateTestController">
+   <children>
+      <ChoiceBox fx:id="choicebox" layoutX="219.0" layoutY="71.0" prefWidth="150.0" />
+      <Button layoutX="382.0" layoutY="71.0" mnemonicParsing="false" onAction="#handleGo" prefHeight="25.0" prefWidth="86.0" text="Go" />
+      <Label layoutX="53.0" layoutY="141.0" prefHeight="225.0" prefWidth="157.0" text="Simple: Choose difficulty, length of test, number of questions, and subject of the questions. The test will then be automatically generated with questions matching the subject pulled at random until the number of questions have been filled" wrapText="true" />
+      <Label layoutX="300.0" layoutY="84.0" prefHeight="294.0" prefWidth="195.0" text="Complex: Every individual question will be able to be customized to match a certain attribute pattern. TestTool will then try to match questions to the attribute pattern specified for each question" wrapText="true" />
+      <Label layoutX="195.0" layoutY="14.0" prefHeight="52.0" prefWidth="348.0" text="Generate Test">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

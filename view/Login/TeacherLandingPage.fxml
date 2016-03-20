@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Login.TeacherLandingPageController">
+  <children>
+    <Button fx:id="addCourse" layoutX="44.0" layoutY="148.0" mnemonicParsing="false" text="Add Course" />
+    <Button fx:id="ViewStats" layoutX="286.0" layoutY="259.0" mnemonicParsing="false" prefWidth="114.0" text="View Stats" />
+    <Button fx:id="GradeTests" layoutX="286.0" layoutY="204.0" mnemonicParsing="false" prefWidth="113.9998779296875" text="Grade Tests" />
+    <Button fx:id="TestBank" layoutX="286.0" layoutY="232.0" mnemonicParsing="false" prefWidth="114.0" text="Test Bank" />
+    <Button fx:id="QuestionBank" layoutX="286.0" layoutY="174.0" mnemonicParsing="false" text="Question Bank" />
+    <Button fx:id="addStudent" layoutX="50.0" layoutY="389.0" mnemonicParsing="false" text="Add Student" />
+    <ChoiceBox fx:id="course" layoutX="44.0" layoutY="121.0" prefWidth="172.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <Label layoutX="14.0" layoutY="62.0" text="Professor:" />
+    <Label layoutX="24.0" layoutY="97.0" text="Please choose your course below:" />
+      <Label layoutX="73.0" prefHeight="37.0" prefWidth="284.0" text="Teacher Home Page">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="teacherName" layoutX="92.0" layoutY="58.0" text="Label">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TableView fx:id="studentTable" layoutX="35.0" layoutY="174.0" prefHeight="200.0" prefWidth="200.0" />
+  </children>
+</AnchorPane>

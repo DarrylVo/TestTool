@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.QuestionBank.GraphicAnswerController">
+   <children>
+      <Label layoutX="97.0" layoutY="86.0" text="Title: " />
+      <Label layoutX="253.0" layoutY="86.0" text="Type:" />
+      <Label layoutX="98.0" layoutY="135.0" text="Question:" />
+      <TextField fx:id="title" layoutX="98.0" layoutY="103.0" prefHeight="25.0" prefWidth="132.0" />
+      <TextField fx:id="questionType" editable="false" layoutX="253.0" layoutY="103.0" promptText="Question Type" />
+      <TextArea fx:id="questionText" editable="false" layoutX="98.0" layoutY="153.0" prefHeight="80.0" prefWidth="644.0" />
+      <Label layoutX="98.0" layoutY="506.0" text="Point Value:" />
+      <TextField fx:id="pointValue" layoutX="174.0" layoutY="502.0" prefHeight="25.0" prefWidth="149.0" />
+      <Button fx:id="back" layoutX="543.0" layoutY="515.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" text="Back" />
+      <Button fx:id="next" layoutX="657.0" layoutY="515.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" text="Next" />
+      <Button fx:id="cancel" layoutX="543.0" layoutY="545.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="221.0" text="Cancel" />
+      <Label layoutX="324.0" layoutY="51.0" text="Add Answer(s)">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="keywords" layoutX="98.0" layoutY="264.0" prefHeight="212.0" prefWidth="221.0" wrapText="true" />
+      <Label layoutX="97.0" layoutY="247.0" text="Keyword(s)" />
+      <Button fx:id="uploadImage" layoutX="533.0" layoutY="241.0" mnemonicParsing="false" prefWidth="130.0" text="Upload Image" />
+      <TextField fx:id="filePath" layoutX="533.0" layoutY="262.0" prefWidth="165.0" promptText="File Path:" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fffffffb" height="200.0" layoutX="533.0" layoutY="291.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <ImageView fx:id="imageView" fitHeight="192.0" fitWidth="210.0" layoutX="528.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="596.0" layoutY="383.0" text="Image Preview" />
+      <Label layoutX="98.0" layoutY="537.0" prefHeight="41.0" prefWidth="276.0" text="Enter a keyword(s) seperated by commas associated with the desired answer" wrapText="true" />
+      <RadioButton fx:id="partial" layoutX="335.0" layoutY="279.0" mnemonicParsing="false" text="Partially Graded" />
+      <RadioButton fx:id="full" layoutX="334.0" layoutY="295.0" mnemonicParsing="false" text="Fully Automated" />
+      <Label layoutX="334.0" layoutY="263.0" text="Automated Grading:" />
+      <Label layoutX="335.0" layoutY="322.0" text="Automated Grading:" />
+      <Label layoutX="356.0" layoutY="338.0" prefHeight="88.0" prefWidth="165.0" text="Partial grading will require instructor to verify the student's answer after automated grading is done" wrapText="true" />
+      <Label layoutX="356.0" layoutY="426.0" prefHeight="52.0" prefWidth="165.0" text="Full grading will allow optional instructor verification" wrapText="true" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.TestBank.GenerateSimpleTestController">
+   <children>
+      <Label layoutX="132.0" layoutY="105.0" prefHeight="19.0" prefWidth="83.0" text="Name of Test" />
+      <Label layoutX="132.0" layoutY="155.0" prefHeight="17.0" prefWidth="113.0" text="Test Course" />
+      <Label layoutX="111.0" layoutY="295.0" text="Number of Questions" />
+      <Label layoutX="132.0" layoutY="360.0" text="Test Duration" />
+      <Label layoutX="132.0" layoutY="218.0" text="Test Difficulty" />
+      <TextField fx:id="name" layoutX="279.0" layoutY="102.0" />
+      <TextField fx:id="numquestion" layoutX="279.0" layoutY="291.0" />
+      <ChoiceBox fx:id="duration" layoutX="279.0" layoutY="356.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="diff" layoutX="279.0" layoutY="214.0" prefWidth="150.0" />
+      <Button layoutX="142.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#handleGenerate" prefHeight="100.0" prefWidth="275.0" text="Generate" />
+      <Label fx:id="courseLabel" layoutX="279.0" layoutY="155.0" text="Label">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Label layoutX="90.0" prefHeight="48.0" prefWidth="435.0" text="Simple Test Generation">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

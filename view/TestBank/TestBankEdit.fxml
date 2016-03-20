@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.TestBank.TestBankEditHandler">
+   <children>
+      <TableView fx:id="questionTable" layoutX="30.0" layoutY="93.0" prefHeight="481.0" prefWidth="415.0">
+        <columns>
+          <TableColumn fx:id="questionColumn" prefWidth="166.0" text="Question" />
+          <TableColumn fx:id="topicColumn" prefWidth="85.0" text="Topic" />
+            <TableColumn fx:id="typeColumn" prefWidth="100.0" text="Question Type" />
+            <TableColumn fx:id="pointsColumn" prefWidth="63.0" text="Points" />
+        </columns>
+      </TableView>
+      <TextFlow layoutX="39.0" layoutY="24.0" prefHeight="52.0" prefWidth="522.0" textAlignment="CENTER">
+         <children>
+            <Label prefHeight="57.0" prefWidth="118.0" text="Edit Test" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </TextFlow>
+      <GridPane alignment="CENTER" layoutX="468.0" layoutY="121.0" prefHeight="424.0" prefWidth="118.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="CancelButton" mnemonicParsing="false" text="Cancel" GridPane.rowIndex="5" />
+            <Button fx:id="AddExistingButton" mnemonicParsing="false" text="Add to Question Bank" GridPane.rowIndex="3" />
+            <Button fx:id="CreateQuestionButton" mnemonicParsing="false" text="Create Question" />
+            <Button fx:id="EditQuestionButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="97.0" text="Edit Question" GridPane.rowIndex="1" />
+            <Button fx:id="DeleteQuestionButton" mnemonicParsing="false" text="Delete Question" GridPane.rowIndex="2" />
+            <Button fx:id="AssignButton" mnemonicParsing="false" onAction="#assignTests" text="Assign" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

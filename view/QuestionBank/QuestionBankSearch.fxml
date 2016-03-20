@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="388.0" prefWidth="615.999755859375" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="view.QuestionBank.QuestionBankController">
+  <children>
+    <Label id="QuestionBank" fx:id="QBQuestionBankTitle" layoutX="258.0" layoutY="14.0" text="Question Bank" />
+    <Button id="Search" fx:id="QBSearch" layoutX="496.0" layoutY="319.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="98.0" text="Search" />
+    <Button id="Edit" fx:id="QBEdit" layoutX="24.0" layoutY="319.0" mnemonicParsing="false" prefWidth="113.0" text="Edit Selected" />
+    <Button id="Delete" fx:id="QBDelete" layoutX="145.0" layoutY="319.0" mnemonicParsing="false" prefWidth="113.0" text="Delete" />
+    <Label fx:id="QBTypeTitle" layoutX="363.0" layoutY="93.0" text="" />
+    <TableView layoutX="24.0" layoutY="73.0" prefHeight="238.0" prefWidth="558.0">
+      <columns>
+        <TableColumn editable="true" maxWidth="5000.0" minWidth="10.0" prefWidth="194.0" text="Description" fx:id="description" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="81.0" text="Class" fx:id="class" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="79.0" text="Topic" fx:id="topic" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="85.0" text="Type" fx:id="type" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="117.0" text="Date Created" fx:id="dateCreated" />
+      </columns>
+    </TableView>
+    <ComboBox id="Course" fx:id="course" layoutX="24.0" layoutY="41.0" prefWidth="136.0" promptText="Course">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox id="QBTopic" fx:id="topic" layoutX="165.0" layoutY="41.0" prefWidth="136.0" promptText="Topic">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox id="QBType" fx:id="type" layoutX="308.0" layoutY="41.0" prefWidth="136.0" promptText="Type">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox id="QBDateCreated" fx:id="date" layoutX="446.0" layoutY="41.0" prefWidth="136.0" promptText="Date Created">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+  </children>
+</AnchorPane>

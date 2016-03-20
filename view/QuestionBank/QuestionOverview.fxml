@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.QuestionBank.addQuestionController">
+   <children>
+      <Pane layoutX="260.0" layoutY="-9.0" prefHeight="609.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-9.0">
+         <children>
+            <Button fx:id="next" layoutX="657.0" layoutY="528.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" text="Next" />
+            <Button fx:id="cancel" layoutX="547.0" layoutY="529.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" text="Cancel" />
+            <RadioButton fx:id="MC" layoutX="476.0" layoutY="128.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="107.0" text="Multiple Choice" />
+            <RadioButton fx:id="fill" layoutX="476.0" layoutY="169.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="107.0" text="Fill-In" />
+            <RadioButton fx:id="TF" layoutX="476.0" layoutY="147.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="107.0" text="True/False" />
+            <RadioButton fx:id="shortAns" layoutX="600.0" layoutY="128.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="107.0" text="Short Answer" />
+            <RadioButton fx:id="longAns" layoutX="600.0" layoutY="147.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="107.0" text="Long Answer" />
+            <Label layoutX="100.0" layoutY="212.0" text="Instructions (optional):" />
+            <Label layoutX="100.0" layoutY="331.0" text="Question:" />
+            <Label layoutX="101.0" layoutY="515.0" text="Difficulty" />
+            <Label layoutX="293.0" layoutY="515.0" text="Approx. Time" />
+            <TextField fx:id="time" layoutX="369.0" layoutY="511.0" prefHeight="25.0" prefWidth="129.0" />
+            <Label layoutX="502.0" layoutY="515.0" text="min." />
+            <TextArea fx:id="instructions" layoutX="100.0" layoutY="231.0" prefHeight="89.0" prefWidth="608.0" />
+            <TextArea fx:id="questionText" layoutX="100.0" layoutY="355.0" prefHeight="140.0" prefWidth="608.0" />
+            <Label layoutX="311.0" layoutY="27.0" text="Add Question">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="difficulty" layoutX="154.0" layoutY="511.0" prefHeight="25.0" prefWidth="129.0" />
+            <Label layoutX="102.0" layoutY="534.0" text="- enter a number between 1 and 5" />
+            <Label fx:id="courseName" layoutX="101.0" layoutY="45.0" prefHeight="17.0" prefWidth="129.0" text="Label">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="104.0" layoutY="180.0" text="Topic:" />
+            <TextField fx:id="topic" layoutX="165.0" layoutY="176.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

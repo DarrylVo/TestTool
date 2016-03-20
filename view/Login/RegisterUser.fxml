@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Login.RegisterUserController">
+   <children>
+      <Label layoutX="115.0" layoutY="29.0" text="Register User">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="109.0" prefHeight="17.0" prefWidth="99.0" text="Type of User:" />
+      <ChoiceBox fx:id="typeList" layoutX="186.0" layoutY="105.0" prefWidth="150.0" />
+      <Label layoutX="57.0" layoutY="258.0" prefHeight="17.0" prefWidth="47.0" text="Name:" />
+      <Label layoutX="54.0" layoutY="204.0" text="Password:" />
+      <TextField fx:id="name" layoutX="187.0" layoutY="254.0" />
+      <PasswordField fx:id="password" layoutX="187.0" layoutY="200.0" />
+      <Button layoutX="23.0" layoutY="371.0" mnemonicParsing="false" onAction="#handleRegister" prefHeight="25.0" prefWidth="170.0" text="Register" />
+      <Button layoutX="302.0" layoutY="371.0" mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+      <Label layoutX="65.0" layoutY="309.0" text="Password must be at least four characters!" />
+      <Label layoutX="54.0" layoutY="148.0" text="Email Address:" />
+      <TextField fx:id="email" layoutX="187.0" layoutY="144.0" />
+   </children>
+</AnchorPane>

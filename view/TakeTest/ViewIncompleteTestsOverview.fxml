@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.TakeTest.ViewIncompleteTestsController">
+   <children>
+      <AnchorPane layoutX="-8.0" layoutY="-8.0" prefHeight="425.0" prefWidth="540.0">
+         <children>
+            <Pane layoutX="23.0" layoutY="78.0" prefHeight="300.0" prefWidth="500.0">
+               <children>
+                  <TableView fx:id="testTable" editable="true" layoutY="6.0" prefHeight="263.0" prefWidth="507.0">
+                    <columns>
+                      <TableColumn fx:id="testName" editable="false" prefWidth="118.0" text="Test Name" />
+                      <TableColumn fx:id="numberOfQuestions" prefWidth="96.0" text="# Of Questions" />
+                        <TableColumn fx:id="className" prefWidth="113.0" text="Class" />
+                        <TableColumn fx:id="dateAssigned" prefWidth="87.0" text="Date Assigned" />
+                        <TableColumn fx:id="dateDue" prefWidth="92.0" text="Date Due" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+            <Text layoutX="199.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Take Test">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Button fx:id="button" layoutX="237.0" layoutY="372.0" mnemonicParsing="false" onMouseClicked="#handleTakeTest" text="Take Test" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

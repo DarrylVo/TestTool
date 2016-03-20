@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="512.0000999999975" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Login.AddStudentController">
+   <children>
+      <TableView fx:id="studentTable" layoutX="31.0" layoutY="49.0" prefHeight="256.0" prefWidth="288.0" />
+      <Button layoutX="392.0" layoutY="103.0" mnemonicParsing="false" onAction="#selected" text="Add Student" />
+      <Button layoutX="392.0" layoutY="165.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="83.0" text="Cancel" />
+   </children>
+</AnchorPane>
